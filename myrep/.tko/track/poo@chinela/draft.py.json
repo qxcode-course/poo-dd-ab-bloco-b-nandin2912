@@ -1,0 +1,54 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-07_17-31-02",
+            "content": "@@ -1,60 +0,0 @@\n-class Chinela:%0A    def __init__(self):%0A        self._tamanho\n",
+            "lines": "0"
+        },
+        {
+            "label": "2025-10-07_17-46-15",
+            "content": "@@ -1,71 +1,54 @@\n-class Chinela:%0A    def __init__(self):%0A        self.__\n+@@ -50,120 +50,11 @@%0A lf._%0A-_%0A \n tamanho\n+%0A-\n  = 0\n-%0A%0A\n+%250A%250A\n     \n@@ -71,17 +71,19 @@\n elf):   \n-%0A\n+%250A\n         \n@@ -107,11 +107,17 @@\n anho\n-%0A%0A%0A\n+%250A%250A%250A\n     \n@@ -150,21 +150,12 @@\n : in\n+i\n t)\n-:%0A\n     \n-    if   \n+%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2025-10-19_02-23-23",
+            "content": "@@ -174,29 +174,6 @@\n  if \n-valor %3C 20 or valor %3E 50:\n+  \n",
+            "lines": "10"
+        },
+        {
+            "label": "2025-10-19_02-29-02",
+            "content": "@@ -1,442 +1,1327 @@\n-class Chinela:%0A    def __init__(self):%0A        self.__tamanho = 0%0A%0A    def getTamanho(self):   %0A        return self.__tamanho%0A%0A%0A    def setTamanho(self, valor: int):%0A        if valor %3C 20 or valor %3E 50:%0A            print(%22fail: tamanho fora do intervalo(20 a 50)%22)%0A%0A        elif valor %25 2 != 0  :%0A            print(%22fail: tamanho deve ser n%C3%BAmero par%22)  %0A%0A        else:%0A            self.__tamanho = valor%0A%0A            print(%22tamanho v%C3%A1lido!%22) \n+@@ -1,8 +1,28 @@%0A+@@ -1,207 +1,35 @@%250A-%0A class Ch%0A@@ -27,17 +27,19 @@%0A Chinela:%0A-%250A%0A+%25250A%0A     def %0A@@ -53,17 +53,19 @@%0A _(self):%0A-%250A%0A+%25250A%0A         %0A@@ -82,18 +82,22 @@%0A anho = 0%0A-%250A%250A%0A+%25250A%25250A%0A     def %0A@@ -116,17 +116,19 @@%0A elf):   %0A-%250A%0A+%25250A%0A         %0A@@ -152,11 +152,17 @@%0A anho%0A-%250A%250A%250A%0A+%25250A%25250A%25250A%0A     %0A@@ -194,17 +194,19 @@%0A r: int):%0A-%250A%0A+%25250A%0A         %0A@@ -218,9 +218,11 @@%0A lor %0A-%253C%0A+%25253C%0A  20 %0A@@ -234,15 +234,84 @@%0A lor %0A-%253E%0A+%25253E%0A  50:%0A+%25250A%250A+@@ -199,66 +199,4 @@%25250A  50:%25250A-%2525250A%250A     %250A@@ -34,33 +34,35 @@%0A %250A%0A- %0A     %0A@@ -315,33 +315,46 @@%0A           print(%0A-%2522%0A+%250A-%252522%250A+%25252522%250A %0A fail: tamanho fo%0A@@ -357,36 +357,46 @@%0A o fo%0A-ra do intervalo(20 a 50)%2522)%250A%250A%0A+%250A@@ -89,184 +89,9 @@%250A  50)%250A-%252522)%25250A%25250A%0A     %0A@@ -411,16 +411,18 @@%0A  valor %2525%0A+25%0A  2 != 0 %0A@@ -423,17 +423,19 @@%0A  != 0  :%0A-%250A%0A+%25250A%0A         %0A@@ -444,17 +444,19 @@%0A   print(%0A-%2522%0A+%252522%0A fail: ta%0A@@ -475,17 +475,22 @@%0A er n%0A-%25C3%25BA%0A+%2525C3%2525BA%0A mero par%0A %2522)  %0A@@ -489,14 +489,20 @@%0A  par%0A-%2522)  %250A%250A%0A+%252522)  %25250A%25250A%0A     %0A@@ -510,17 +510,19 @@%0A    else:%0A-%250A%0A+%25250A%0A         %0A@@ -551,10 +551,14 @@%0A alor%0A-%250A%250A%0A+%25250A%25250A%0A     %0A@@ -571,17 +571,19 @@%0A   print(%0A-%2522%0A+%252522%0A tamanho %0A@@ -587,13 +587,32 @@%0A ho v%0A-%25C3%25A1lido!%2522) %0A+%2525C3%2525A1lido!%252522) %250A+%25252522)%25250A%250A%0A\n",
+            "lines": "101"
+        },
+        {
+            "label": "2025-10-19_02-45-41",
+            "content": "@@ -439,104 +439,4 @@\n !%22) \n-%0A%0A%0Achinela = Chinela()%0A%0Awhile chinela.getTamanho() == 0:%0A    print(%22digite seu tamanho de chinela:%22)\n",
+            "lines": "19"
+        },
+        {
+            "label": "2025-10-19_03-05-40",
+            "content": "@@ -539,63 +539,4 @@\n a:%22)\n-%0A    tamanho = int(input())%0A    chinela.setTamanho(tamanho)\n",
+            "lines": "25"
+        },
+        {
+            "label": "2025-10-19_03-06-42",
+            "content": "@@ -598,79 +598,4 @@\n nho)\n-%0A%0Aprint(%22Parab%C3%A9ns, voc%C3%AA comprou uma chinela tamanho%22, chinela.getTamanho())\n",
+            "lines": "27"
+        },
+        {
+            "label": "2025-10-19_03-07-15",
+            "content": "@@ -463,75 +463,70 @@\n ()%0A%0A\n-for tamanho in %5B15, 41, 40%5D:%0A    print(%22Tentando tamanho:%22,\n+while chinela.getTamanho() == 0:%0A    print(%22digite seu\n  tamanho\n )%0A  \n@@ -525,21 +525,19 @@\n anho\n-)%0A   \n+ de\n  chinela\n .set\n@@ -536,44 +536,51 @@\n nela\n-.setTamanho(tamanho\n+:%22)%0A    tamanho = int(input()\n )%0A    \n-if \n chinela.\n getT\n@@ -567,33 +567,33 @@\n ())%0A    chinela.\n-g\n+s\n etTamanho() != 0\n@@ -590,29 +590,17 @@\n nho(\n-) != 0:%0A        break\n+tamanho)%0A\n %0Apri\n",
+            "lines": "29"
+        },
+        {
+            "label": "2025-10-19_03-11-32",
+            "content": "@@ -612,17 +612,8 @@\n eak%0A\n-        %0A\n prin\n",
+            "lines": "29"
+        },
+        {
+            "label": "2025-10-19_03-11-33",
+            "content": "class Chinela:\n    def __init__(self):\n        self.__tamanho = 0\n\n    def getTamanho(self):   \n        return self.__tamanho\n\n\n    def setTamanho(self, valor: int):\n        if valor < 20 or valor > 50:\n            print(\"fail: tamanho fora do intervalo(20 a 50)\")\n\n        elif valor % 2 != 0  :\n            print(\"fail: tamanho deve ser n\u00famero par\")  \n\n        else:\n            self.__tamanho = valor\n\n            print(\"tamanho v\u00e1lido!\") \n\n\nchinela = Chinela()\n\nfor tamanho in [15, 41, 40]:\n    print(\"Tentando tamanho:\", tamanho)\n    chinela.setTamanho(tamanho)\n    if chinela.getTamanho() != 0:\n        break\n        \nprint(\"Parab\u00e9ns, voc\u00ea comprou uma chinela tamanho\", chinela.getTamanho())",
+            "lines": "30"
+        }
+    ]
+}

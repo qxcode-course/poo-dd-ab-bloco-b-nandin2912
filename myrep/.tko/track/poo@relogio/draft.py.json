@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-07_18-12-34",
+            "content": "\n\n# 1. controle atraves de gets e sets\n# 2. controle iniciando e usando os sets no construtor\n# 3. parametros nomeados\n\n# Definir valores de forma controlada\nclass Hora:\n    def __init__(self, h: int = 0, m: int = 0): # parametro default\n        self.__hora: int = 0\n        self.__min: int = 0\n        self.set_hora(h) # valida\u00e7\u00e3o dentro do init\n        self.set_min(m)\n\n    def set_hora(self, value: int): # escrita\n        if value < 0 or value > 23:\n            print(\"fail: hora invalida\")\n            return self\n        self.__hora = value\n        return self\n\n    def set_min(self, value: int): # escrita\n        if value < 0 or value > 59:\n            print(\"fail: minuto invalido\")\n            return self\n        self.__min = value\n        return self\n\n    def get_hora(self) -> int: # leitura\n        return self.__hora\n    \n    def get_min(self) -> int:\n        return self.__min\n\nagora = Hora()\n\nprint(agora.get_hora())\nprint(agora.get_min())",
+            "lines": "38"
+        }
+    ]
+}

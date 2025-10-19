@@ -1,0 +1,15 @@
+2025-10-07 17:31:00, MOVE, v:1, k:poo@chinela, mode:DOWN
+2025-10-07 17:31:02, MOVE, v:1, k:poo@chinela, mode:PICK
+2025-10-07 17:31:02, EXEC, v:1, k:poo@chinela, mode:LOCK, rate:100, size:0
+2025-10-07 17:31:16, EXEC, v:1, k:poo@chinela, mode:LOCK, rate:100
+2025-10-07 17:31:17, EXEC, v:1, k:poo@chinela, mode:LOCK, rate:100
+2025-10-07 17:31:17, EXEC, v:1, k:poo@chinela, mode:LOCK, rate:100
+2025-10-07 17:46:01, MOVE, v:1, k:poo@chinela, mode:BACK
+2025-10-07 17:46:14, MOVE, v:1, k:poo@chinela, mode:PICK
+2025-10-07 17:46:15, EXEC, v:1, k:poo@chinela, mode:LOCK, rate:100, size:3
+2025-10-07 17:46:16, EXEC, v:1, k:poo@chinela, mode:LOCK, rate:100
+2025-10-07 18:02:38, MOVE, v:1, k:poo@chinela, mode:BACK
+2025-10-07 18:04:36, MOVE, v:1, k:poo@relogio, mode:DOWN
+2025-10-07 18:04:36, MOVE, v:1, k:poo@relogio, mode:PICK
+2025-10-07 18:12:34, EXEC, v:1, k:poo@relogio, mode:FULL, rate:0, size:38
+2025-10-07 18:12:35, EXEC, v:1, k:poo@relogio, mode:FULL, rate:0
