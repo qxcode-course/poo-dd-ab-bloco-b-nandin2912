@@ -1,0 +1,69 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-19_03-14-04",
+            "content": "@@ -1,12 +0,0 @@\n-class Camisa\n",
+            "lines": "0"
+        },
+        {
+            "label": "2025-10-19_03-28-16",
+            "content": "@@ -9,57 +9,4 @@\n misa\n-:%0A    def __init__(self):%0A        self.__tamanho = %22%22\n",
+            "lines": "1"
+        },
+        {
+            "label": "2025-10-19_03-31-13",
+            "content": "@@ -62,63 +62,4 @@\n = %22%22\n-%0A%0A    def getTamanho(self):%0A        return self.__tamanho  \n",
+            "lines": "3"
+        },
+        {
+            "label": "2025-10-19_03-32-02",
+            "content": "@@ -121,213 +121,4 @@\n ho  \n-%0A%0A    def setTamanho(self, valor: str):%0A        tamanhos_validos %5B%22pp%22, %22p%22, %22m%22, %22g%22, %22gg%22, %22xg%22%5D%0A        if valor in tamanhos_validos:%0A            self.__tamanho = valor%0A%0A        else:%0A            print(%22f%22)\n",
+            "lines": "6"
+        },
+        {
+            "label": "2025-10-19_03-43-08",
+            "content": "@@ -1,336 +1,39 @@\n-class Camisa:%0A    def __init__(self):%0A        self.__tamanho = %22%22%0A%0A    def getTamanho(self):%0A        return self.__tamanho  %0A%0A    def setTamanho(self, valor: str):%0A        tamanhos_validos %5B%22pp%22, %22p%22, %22m%22, %22g%22, %22gg%22, %22xg%22%5D%0A        if valor in tamanhos_validos:%0A            self.__tamanho = valor%0A%0A        else:%0A            print(%22fail%22)\n+@@ -328,9 +328,6 @@%0A t(%2522f%0A-ail%0A %2522)%0A\n",
+            "lines": "4"
+        },
+        {
+            "label": "2025-10-19_03-43-09",
+            "content": "@@ -1,338 +1,32 @@\n-class Camisa:%0A    def __init__(self):%0A        self.__tamanho = %22%22%0A%0A    def getTamanho(self):%0A        return self.__tamanho  %0A%0A    def setTamanho(self, valor: str):%0A        tamanhos_validos %5B%22pp%22, %22p%22, %22m%22, %22g%22, %22gg%22, %22xg%22%5D%0A        if valor in tamanhos_validos:%0A            self.__tamanho = valor%0A%0A        else:%0A            print(%22fail\n+@@ -331,73 +331,6 @@%0A fail%0A-\n : ta\n@@ -63,15 +63,21 @@\n idos\n-%22, %22, %22\n+%2522, %2522, %2522\n .joi\n@@ -95,9 +95,17 @@\n validos)\n-)\n+%0A+%2522%0A )%0A\n",
+            "lines": "5"
+        },
+        {
+            "label": "2025-10-19_04-06-25",
+            "content": "@@ -400,32 +400,4 @@\n os))\n-%0A%0A%0A%0Acamisa = Camisa()%0A%0Awhile\n",
+            "lines": "14"
+        },
+        {
+            "label": "2025-10-19_22-20-15",
+            "content": "@@ -428,138 +428,4 @@\n hile\n- camisa.getTamanho() == %22%22:%0A    print(%22Digite seu tamanho de roupa (pp, p, m, g, gg, xg):%22)%0A    tamanho = input().strip().upper()%0A    \n",
+            "lines": "20"
+        },
+        {
+            "label": "2025-10-19_22-26-45",
+            "content": "@@ -562,37 +562,4 @@\n     \n-camisa.setTamanho(tamanho)%0A%0A    %0A\n",
+            "lines": "23"
+        },
+        {
+            "label": "2025-10-19_22-28-31",
+            "content": "@@ -590,78 +590,8 @@\n o)%0A%0A\n-print(%22Parab%C3%A9ns, voc%C3%AA comprou uma roupa tamanho%22, camisa.getTamanho())\n     \n",
+            "lines": "25"
+        },
+        {
+            "label": "2025-10-19_22-28-32",
+            "content": "@@ -422,69 +422,40 @@\n a()%0A\n-entradas = %5B%22xp%22, %22xx%22, %22m%22, %22xg%22%5D%0A%0Afor tentativa in entradas\n+%0Awhile camisa.getTamanho() == %22%22\n :%0A  \n@@ -466,74 +466,99 @@\n int(\n-f\n %22Digit\n-ando: %7Btentativa%7D%22)%0A    camisa.setTamanho(tentativa\n+e seu tamanho de roupa (pp, p, m, g, gg, xg):%22)%0A    tamanho = input().strip()\n .upper()\n )%0A  \n@@ -557,25 +557,21 @@\n er()\n-)\n %0A    \n-if \n camisa.\n-g\n+s\n etTa\n@@ -580,30 +580,16 @@\n nho(\n-) != %22%22:%0A        break\n+tamanho)\n %0A%0Apr\n@@ -656,9 +656,13 @@\n manho())\n+    \n %0A\n",
+            "lines": "25"
+        },
+        {
+            "label": "2025-10-19_22-36-55",
+            "content": "@@ -181,18 +181,16 @@\n _validos\n- =\n  %5B%22pp%22, \n",
+            "lines": "27"
+        },
+        {
+            "label": "2025-10-19_22-37-38",
+            "content": "class Camisa:\n    def __init__(self):\n        self.__tamanho = \"\"\n\n    def getTamanho(self):\n        return self.__tamanho  \n\n    def setTamanho(self, valor: str):\n        tamanhos_validos = [\"pp\", \"p\", \"m\", \"g\", \"gg\", \"xg\"]\n        if valor in tamanhos_validos:\n            self.__tamanho = valor\n\n        else:\n            print(\"fail: tamanho invalido. Valores permitidos\", \", \".join(tamanhos_validos))\n\n\n\ncamisa = Camisa()\nentradas = [\"xp\", \"xx\", \"m\", \"xg\"]\n\nfor tentativa in entradas:\n    print(f\"Digitando: {tentativa}\")\n    camisa.setTamanho(tentativa.upper())\n    if camisa.getTamanho() != \"\":\n        break\n\nprint(\"Parab\u00e9ns, voc\u00ea comprou uma roupa tamanho\", camisa.getTamanho())\n",
+            "lines": "27"
+        }
+    ]
+}
